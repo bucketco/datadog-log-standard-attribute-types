@@ -1,0 +1,26 @@
+{
+  "name": "@heap-dk/datadog-log-standard-attribute-types",
+  "version": "0.0.0",
+  "description": "Typescript types for datadog log context standard attributes",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heap-dk/datadog-log-standard-attribute-types.git"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "datadog",
+    "log",
+    "attributes"
+  ],
+  "author": "Peter Brandt Müller <peter@heap.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heap-dk/datadog-log-standard-attribute-types/issues"
+  },
+  "homepage": "https://github.com/heap-dk/datadog-log-standard-attribute-types#readme"
+}
