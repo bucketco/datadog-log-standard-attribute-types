@@ -336,16 +336,7 @@ export enum DD_STATUS {
       /**
        * 	Indicates the desired action to be performed for a given resource.
        */
-      method?:
-        | "GET"
-        | "HEAD"
-        | "POST"
-        | "PUT"
-        | "DELETE"
-        | "CONNECT"
-        | "OPTIONS"
-        | "TRACE"
-        | "PATCH";
+      method?: string;
 
       /**
        * 	HTTP header field that identifies the address of the webpage that linked to the resource being requested.
