@@ -1,0 +1,19 @@
+{
+    "include": ["src"],
+    "compilerOptions": {
+      "alwaysStrict": true,
+      "declaration": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "strict": true,
+      "strictFunctionTypes": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": true,
+      "strictBindCallApply": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "outDir": "dist"
+    }
+}

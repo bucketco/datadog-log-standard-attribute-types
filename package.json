@@ -2,10 +2,12 @@
   "name": "@heap-dk/datadog-log-standard-attribute-types",
   "version": "1.0.1",
   "description": "Typescript types for datadog log context standard attributes",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "preversion": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/heap-dk/datadog-log-standard-attribute-types/issues"
   },
-  "homepage": "https://github.com/heap-dk/datadog-log-standard-attribute-types#readme"
+  "homepage": "https://github.com/heap-dk/datadog-log-standard-attribute-types#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
 }
