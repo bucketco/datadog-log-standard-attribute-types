@@ -1,6 +1,6 @@
 {
   "name": "@heap-dk/datadog-log-standard-attribute-types",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Typescript types for datadog log context standard attributes",
   "types": "index.d.ts",
   "scripts": {
