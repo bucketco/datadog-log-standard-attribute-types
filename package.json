@@ -2,6 +2,7 @@
   "name": "@heap-dk/datadog-log-standard-attribute-types",
   "version": "1.0.0",
   "description": "Typescript types for datadog log context standard attributes",
+  "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
