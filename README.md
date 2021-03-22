@@ -8,13 +8,9 @@ Assembled from data from:
 
 ## Installation
 
-This module is hosted on Github packages. In order to install it, set the following in your `.npmrc`:
-
 ```
-@heap-dk:registry=https://npm.pkg.github.com
+npm install --save-dev @heap-dk/datadog-log-standard-attribute-types
 ```
-
-Then install with `npm install --save-dev @heap-dk/datadog-log-standard-attribute-types`
 
 ## Usage
 
