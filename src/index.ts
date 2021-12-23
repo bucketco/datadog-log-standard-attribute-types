@@ -56,6 +56,8 @@ export enum DD_STATUS {
 
       /** The type or “kind” of an error (i.e “Exception”, “OSError”, …) */
       kind?: string;
+
+      [k: string]: null | undefined | string | number | object;
     };
 
     logger?: {
