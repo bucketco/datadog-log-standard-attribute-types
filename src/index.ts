@@ -20,6 +20,26 @@ export enum DD_STATUS {
     host?: string;
 
     /**
+     * By default Datadog generates a timestamp and appends it in a date attribute when logs are received. However, if a JSON formatted log file includes one of the following attributes, Datadog interprets its value as the log’s official date:
+     *
+     * - @timestamp
+     * - timestamp
+     * - _timestamp
+     * - Timestamp
+     * - eventTime
+     * - date
+     * - published_date
+     * - syslog.timestamp
+     *
+     * **Note:** Datadog rejects a log entry if its official date is older than 18 hours in the past.
+     *
+     * The recognized date formats are: ISO8601, UNIX (the milliseconds EPOCH format), and RFC3164
+     *
+     * @see [date-attribute](https://docs.datadoghq.com/logs/log_configuration/pipelines/?tab=date#date-attribute)
+     */
+    date?: number | string;
+
+    /**
      * This corresponds to the integration name: the technology from which the log originated.
      *
      * When it matches an integration name, Datadog automatically installs the corresponding parsers and facets.
