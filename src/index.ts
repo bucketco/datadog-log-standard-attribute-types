@@ -439,5 +439,21 @@ export enum DD_STATUS {
       }
     };
 
+    dd?: {
+      /**
+       * TRACE ID ATTRIBUTE
+       *
+       * By default, Datadog tracers can automatically inject trace and span IDs into your logs.
+       * However, if a JSON formatted log includes the following attributes, Datadog interprets
+       * its value as the log’s trace_id:
+       *
+       * - dd.trace_id
+       * - contextMap.dd.trace_id
+       *
+       * @see [TRACE ID ATTRIBUTE](https://docs.datadoghq.com/logs/log_configuration/pipelines/?tab=traceid#trace-id-attribute)
+       */
+      trace_id?: string
+    }
+
     [k: string]: null | undefined | string | number | object;
   }
